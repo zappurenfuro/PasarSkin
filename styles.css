@@ -58,7 +58,7 @@ header {
 }
 
 .navbar {
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .navbar .container {
@@ -76,11 +76,19 @@ header {
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--light-text);
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.logo img {
+.logo-icon {
+    height: 70px;
+    width: 70px;
+    object-fit: contain;
+}
+
+.logo-text {
     height: 60px;
-    width: 60px;
+    width: auto;
     object-fit: contain;
 }
 
@@ -548,8 +556,13 @@ footer {
     color: var(--primary-color);
 }
 
-.footer-logo img {
+.footer-logo .logo-icon {
     height: 35px;
+    width: 35px;
+}
+
+.footer-logo .logo-text {
+    height: 28px;
     width: auto;
 }
 
