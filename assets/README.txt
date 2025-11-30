@@ -14,6 +14,18 @@ REQUIRED FILES:
    - Can be a CS2/gaming related image
    - Will be used as a subtle background overlay
 
+FAVICON FILES (for browser tab icon):
+--------------------------------------
+To create favicons from your logo.png:
+- Visit: https://favicon.io/favicon-converter/
+- Upload your logo.png
+- Download the generated files
+- Extract and copy these files to this folder:
+  * favicon.ico (16x16, 32x32, 48x48)
+  * favicon-16x16.png
+  * favicon-32x32.png
+  * apple-touch-icon.png (180x180)
+
 TIPS:
 -----
 - Use PNG format for logos (supports transparency)
