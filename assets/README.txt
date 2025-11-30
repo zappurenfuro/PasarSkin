@@ -14,6 +14,15 @@ REQUIRED FILES:
    - Can be a CS2/gaming related image
    - Will be used as a subtle background overlay
 
+GALLERY FOLDER (for sold items carousel):
+------------------------------------------
+Add your sold item images to the 'gallery' subfolder:
+- item1.jpg, item2.jpg, item3.jpg, etc.
+- Aspect ratio: 4:5 (e.g., 800x1000px, 1000x1250px)
+- Images will be automatically cropped to fit
+- Shows CS2 skins or items you've successfully sold
+- Each image will have a "SOLD" badge overlay
+
 FAVICON FILES (for browser tab icon):
 --------------------------------------
 To create favicons from your logo.png:

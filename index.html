@@ -169,6 +169,37 @@
         </div>
     </section>
 
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Successful Transactions</h2>
+            <p class="section-subtitle">Recent items sold from PasarSkin</p>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="galleryTrack">
+                        <!-- Gallery items will be loaded dynamically from Google Sheets -->
+                    </div>
+                </div>
+
+                <button class="carousel-btn next" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+            
+            <div class="gallery-loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading gallery...</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">

@@ -622,7 +622,202 @@ footer {
     }
 }
 
-/* ==================== RESPONSIVE DESIGN ==================== */
+/* ==================== GALLERY SECTION ==================== */
+.gallery {
+    padding: 100px 0;
+    background: var(--dark-bg);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.carousel-track {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.gallery-item {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.gallery-image {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 4 / 5;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    background: var(--card-bg);
+    margin: 0 auto;
+    display: block;
+}
+
+.gallery-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.sold-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--primary-color);
+    color: var(--light-text);
+    padding: 10px 20px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: pulse 2s infinite;
+}
+
+.sold-badge i {
+    font-size: 1.2rem;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    color: var(--light-text);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+    left: 0;
+}
+
+.carousel-btn.next {
+    right: 0;
+}
+
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.carousel-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gray-text);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    padding: 0;
+}
+
+.carousel-dot.active {
+    background: var(--primary-color);
+    width: 30px;
+    border-radius: 6px;
+}
+
+.gallery-loading {
+    text-align: center;
+    padding: 3rem;
+    color: var(--gray-text);
+}
+
+.gallery-loading i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.gallery-loading.hidden {
+    display: none;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* Responsive Gallery */
+@media screen and (max-width: 768px) {
+    .carousel-container {
+        padding: 0 50px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .sold-badge {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        top: 15px;
+        right: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-container {
+        padding: 0 40px;
+    }
+
+    .sold-badge {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+        top: 10px;
+        right: 10px;
+    }
+}
+
+/* ==================== CONTACT SECTION ==================== */
 @media screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
